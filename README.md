@@ -1,6 +1,6 @@
 # Meal Tracker
 
-This application will allow the user to track their meals throughout the day.
+This application will allow the user to track their meals throughout the day.  They can add and edit meals, and view them based on the amount of calories they have.
 
 ## Installation
 
@@ -17,12 +17,12 @@ This application will allow the user to track their meals throughout the day.
 ## Planning
 
   * Create root component and HTML
-  * Create meal model
+  * Create meal model with properies of name, details, and calorie count
   * Create component to list meals
   * Create component to add meals to tracker
   * Create component to edit meals
-  * Filter models using a pipe
-  * Include and modify bootstrap.
+  * Filter models by calorie count using a pipe
+  * Include and modify bootstrap and sass
   * Develop custom style
 
 ### Bugs
