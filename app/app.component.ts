@@ -25,8 +25,11 @@ export class AppComponent {
 
   masterMealList: Meal[] = [
     new Meal('Hamburger', 'Did not get a soda or cheese on my burger!', 354),
-    new Meal('Fries', 'I only ate half of them', 365),
-    new Meal('Ice cream', 'I had two scoops and a cone', 300)
+    new Meal('Ice cream', 'I had two scoops and a cone', 300),
+    new Meal('Broccoli', 'one serving', 50),
+    new Meal('Oatmeeal', 'I used milk and brown sugar', 170),
+    new Meal('Spaghetti', 'I had meat sauce on it', 270),
+    new Meal('Steak', '8 oz sirloin', 450)
   ];
 
   addMeal(newMealFromChild: Meal) {

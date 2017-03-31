@@ -10,14 +10,14 @@ import { Meal } from './meal.model';
     <option value="highCalorie">High calorie</option>
     <option value="lowCalories">Low calorie</option>
   </select>
-  <ul>
-    <li *ngFor="let currentMeal of childMealList | calories:filterByCalories">
-      <h4>{{currentMeal.name}}</h4>
-      <p>{{currentMeal.details}}</p>
-      <p>calories: {{currentMeal.calories}}</p>
-      <button (click)="editButtonClicked(currentMeal)">Edit</button>
-    </li>
-  </ul>
+  <hr>
+  <div *ngFor="let currentMeal of childMealList | calories:filterByCalories">
+    <p>name: {{currentMeal.name}}</p>
+    <p>details: {{currentMeal.details}}</p>
+    <p>calories: {{currentMeal.calories}}</p>
+    <button (click)="editButtonClicked(currentMeal)">Edit</button>
+    <hr>
+  </div>
   `
 })
 
