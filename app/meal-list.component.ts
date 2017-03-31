@@ -4,19 +4,19 @@ import { Meal } from './meal.model';
 @Component({
   selector: 'meal-list',
   template: `
-  <h2>List of today's meals</h2>
   <select (change)="onChange($event.target.value)">
     <option value="allMeals" selected="selected">All meals</option>
     <option value="highCalorie">High calorie</option>
     <option value="lowCalories">Low calorie</option>
   </select>
-  <hr>
-  <div *ngFor="let currentMeal of childMealList | calories:filterByCalories">
-    <p>name: {{currentMeal.name}}</p>
-    <p>details: {{currentMeal.details}}</p>
-    <p>calories: {{currentMeal.calories}}</p>
-    <button (click)="editButtonClicked(currentMeal)">Edit</button>
-    <hr>
+  <br><br>
+  <div class="col-md-7">
+    <div class="image-col" *ngFor="let currentMeal of childMealList | calories:filterByCalories">
+      <h4>name: {{currentMeal.name}}</h4>
+      <h4>details: {{currentMeal.details}}</h4>
+      <h4>calories: {{currentMeal.calories}}</h4>
+      <button class="btn" (click)="editButtonClicked(currentMeal)">Edit</button>
+    </div>
   </div>
   `
 })

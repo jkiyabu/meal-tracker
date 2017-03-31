@@ -1,0 +1,43 @@
+$tan: #ffedce;
+
+body {
+  background-image: url(/resources/images/food.png);
+  font-weight: bold;
+  color: red;
+}
+
+h2 {
+  font-style: italic;
+  font-weight: bold;
+}
+
+h3 {
+  font-weight: bold;
+  background-color: $tan;
+  font-style: italic;
+  border: 2px solid red;
+  text-align: center;
+}
+.jumbotron{
+  text-align: center;
+  font-family: cursive;
+  background-color: $tan;
+  border: 5px solid red;
+  color: red;
+  margin-left: 150px;
+  margin-right: 150px;
+}
+
+.image-col {
+  position: relative;
+  background-color: $tan;
+  max-width: 100%;
+  margin-bottom: 3%;
+  padding: 15px;
+  border: 5px solid red;
+}
+
+.btn {
+  background-color: red;
+  color: white;
+}

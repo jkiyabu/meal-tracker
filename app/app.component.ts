@@ -5,12 +5,14 @@ import { Meal } from './meal.model';
   selector: 'app-root',
   template: `
   <div class="container">
-    <h1>Meal Tracker</h1>
-    <h3>{{month}}/{{day}}/{{year}}</h3>
-
+    <div class="jumbotron">
+      <h1>MEAL TRACKER</h1>
+    </div>
+    <h3>Today's meals {{month}}/{{day}}/{{year}}</h3>
+    <br>
     <meal-list [childMealList]="masterMealList" (clickSender)="editMeal($event)"></meal-list>
-    <edit-meal [childSelectedMeal]="selectedMeal" (editButtonClickSender)="finishedEditing()"></edit-meal>
     <add-meal (newMealSender)="addMeal($event)"></add-meal>
+    <edit-meal [childSelectedMeal]="selectedMeal" (editButtonClickSender)="finishedEditing()"></edit-meal>
 
   </div>
   `
@@ -27,7 +29,7 @@ export class AppComponent {
     new Meal('Hamburger', 'Did not get a soda or cheese on my burger!', 354),
     new Meal('Ice cream', 'I had two scoops and a cone', 300),
     new Meal('Broccoli', 'one serving', 50),
-    new Meal('Oatmeeal', 'I used milk and brown sugar', 170),
+    new Meal('Oatmeal', 'I used milk and brown sugar', 170),
     new Meal('Spaghetti', 'I had meat sauce on it', 270),
     new Meal('Steak', '8 oz sirloin', 450)
   ];
