@@ -1,0 +1,14 @@
+{
+  "name": "meal-tracker",
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "homepage": "https://github.com/jkiyabu/angular2-tap-room",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
