@@ -3,13 +3,20 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent }   from './app.component';
 import { MealListComponent } from './meal-list.component';
 import { AddMealComponent } from './add-meal.component'
+import { EditMealComponent } from './edit-meal.component';
+import { FormsModule }  from '@angular/forms';
+
 
 @NgModule({
-  imports: [ BrowserModule ],
+  imports: [
+    BrowserModule,
+    FormsModule 
+  ],
   declarations: [
     AppComponent,
     MealListComponent,
-    AddMealComponent
+    AddMealComponent,
+    EditMealComponent
   ],
   bootstrap:    [ AppComponent ]
 })
